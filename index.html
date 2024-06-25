@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>MiniStore</h1>
+
+        <ul class="sidebar" type="none">
+            <li onclick=closeBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#watches">Watches</a></li>
+            <li><a href="#sale">Sale</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        <div class="nav-bar">
+            <ul type="none">
+                <li class="hide active"><a href="#">Home</a></li>
+                <li class="hide"><a href="#service">Service</a></li>
+                <li class="hide"><a href="#product">Product</a></li>
+                <li class="hide"><a href="#watches">Watches</a></li>
+                <li class="hide"><a href="#sale">Sale</a></li>
+                <li class="hide"><a href="#blog">Blog</a></li>
+                <li class="menu-bar"onclick=openBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                
+                <i id="hide" class="fa fa-search "></i>
+                <i id="hide" class="fa fa-user "></i>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="content1">
+        <h1>AN EXCLUSIVE PRODUCT STORE.</h1>
+        <a href="#product">
+            <button>SHOP PRODUCT</button>
+        </a>
+    </div>
+
+    <div class="service" id="service">
+        <div class="row-1">
+            <div class="icon-1">
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="cont-1">
+                <h3>FREE DELIVERY</h3>
+                <p>Military-grade durability.</p>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <div class="icon-2">
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div class="cont-2">
+                <h3>QUALITY GUARANTEE</h3>
+                <p>We offer a curated selection of top-brand devices, from smartphones 
+                and laptops to smart home gadgets and audio equipment.</p>
+            </div>
+        </div>
+
+        <div class="row-3">
+            <div class="icon-3">
+                <i class="fa fa-tag" aria-hidden="true"></i>
+            </div>
+            <div class="cont-3">
+                <h3>DAILY OFFERS</h3>
+                <p>Effective offers are provided by the shop which are valid till 24 hours.</p>
+            </div>
+        </div>
+    
+        <div class="row-4">
+            <div class="icon-4">
+                <i class="fa fa-shield" aria-hidden="true"></i>
+            </div>
+            <div class="cont-4">
+                <h3>100% SECURE DISCOUNTS</h3>
+                <p>Limited-time offer with encrypted redemption code.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="product" id="product">
+        <h1>MOBILE PRODUCTS</h1>
+        <div class="block">
+            <div class="blog-1">
+                <div class="img-1">
+                    <img src="iphone-xs.jpg">
+                    <h3>Iphone 10</h3>
+                    <p>$980</p>
+                </div>
+                <div class="img-2">
+                    <img src="iphone-11.jpg">
+                    <h3>Iphone 11</h3>
+                    <p>$1100</p>
+                </div>
+            </div>
+            
+            <div class="blog-2">
+                <div class="img-3">
+                    <img src="iphone-12.jpg">
+                    <h3>Iphone 12</h3>
+                    <p>$1300</p>
+                </div>
+                <div class="img-4">
+                    <img src="iphone-13.jpg">
+                    <h3>Iphone 13</h3>
+                    <p>$1500</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+    <div class="watches" id="watches">
+        <h1>SMART WATCHES</h1>
+        <div class="block">
+            <div class="block-1">
+                <div class="img-1">
+                    <img src="black-watch.webp">
+                    <h3>Black Watch</h3>
+                    <p>$650</p>
+                </div>
+                <div class="img-2">
+                    <img src="fitness-track.webp">
+                    <h3>Fitness Track Watch</h3>
+                    <p>$750</p>
+                </div>
+            </div>
+            
+            <div class="block-2">
+                <div class="img-3">
+                    <img src="apple.webp">
+                    <h3>Apple Watch</h3>
+                    <p>$800</p>
+                </div>
+                <div class="img-4">
+                    <img src="heavy-watch.jpg">
+                    <h3>Heavy Watch</h3>
+                    <p>$700</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sale" id="sale">
+        <div class="content">
+        <p>10% OFF</p>
+        <h1>NEW YEAR SALE</h1>
+        <a href="#">
+            <button>SHOP SALE</button>
+        </a>
+        </div>
+    </div>
+
+
+    <div class="blog" id="blog">
+        <h1>LATEST POST</h1>
+        <div class="block">
+            <div class="blog-1">
+                <img src="blog-1.jpg">
+                <h3>Ways to take care of phone  during monsoon.</h3>
+                <p>A waterproof phone case acts as a barrier against rain and splashes. 
+                Choose a case with a clear front for easy touch screen access and consider 
+                a lanyard for added security. Ths will make sure your phone stays dry and 
+                safe even during rains</p>
+            </div>
+            <div class="blog-2">
+                <img src="blog-2.jpg">
+                <h3>Smartwatch companies turn to premium buyers looking for upgrade.</h3>
+                <p>Leading smartwatch brands like Noise, Boult, and Boat are targeting repeat 
+                buyers with premium hardware to increase average selling prices and improve 
+                profitability amid declining shipments and intense competition. They are 
+                using their own processors, high-end materials, and aesthetic enhancements</p>
+            </div>
+            <div class="blog-3">
+                <img src="blog-3.jpeg">
+                <h3>Cheaper 5G phones cheap away at average prices.</h3>
+                <p>Flat Average selling prices (ASP) in the March quarter was largely due to 
+                a 22% on-year rise in shipments of mass budget phones priced at $100-200 at 
+                16.3 million units, compared with 13.4 million units a year earlier, marking 
+                a resurgence from previous quarters.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="quote">
+        <div class="quote-icon">
+            <i class="fa fa-quote-right" aria-hidden="true"></i>
+        </div>
+        <div class="quote1">
+            <p>"I am a little bit of a geek - I have to be the first
+                person to get new things when they come out. I always want to try 
+                and buy new gadgets."</p>
+            <h4>Tom Felton</h4>
+        </div>
+
+        <div class="quote2">
+            <p>"Dreams about the future are always filled with gadgets."</p>
+            <h4>Neil deGrasse Tyson</h4>
+        </div>
+
+        <div class="dots">
+            <span onclick= showQuote1() class="dot1"></span>
+            <span onclick= showQuote2() class="dot2"></span>
+        </div>
+    </div>
+
+
+    <div class="subscribe">
+        <div class="heading">
+            <h2>Subscribe Us Now</h2>
+            <p>Get the latest news, updates and deals directly mailed to your inbox.</p>
+        </div>
+        <div class="container">
+            <div class="block-1">
+                <input type="text" placeholder="Email address here">
+            </div>
+            <div class="block-2">
+                <a href="#">
+                    <button>SUBSCRIBE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="last">
+        <div class="address">
+            <h1>MiniStore</h1>
+            <p> From smartphones and laptops to smart home devices and audio gear, 
+            we offer a curated selection of top brands and innovative gadgets.</p>
+            <ul type="none">
+               <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+               <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+               <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+               <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+               <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+
+        <div class="help">
+            <h1>Help & Info</h1>
+            <ul type="none">
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <p class="para1">Do you have any queries or suggestion?</p>
+            <p class="para2">MiniStore@gmail.com</p>
+            <p class="para3">If you need support, just give a call</p>
+            <p class="para4">+0265 079 2436148</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>© Copyright 2023 MiniStore. Design by Faazil Ali</p>
+    </footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

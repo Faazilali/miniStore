@@ -1,0 +1,1076 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    margin:2rem 1rem;
+    display:flex;
+    height:6rem;
+}
+
+.nav-bar{
+    position: absolute;
+    right:2rem;
+}
+
+.nav h1{
+    font-weight: 400;
+    font-size:2rem;
+}
+
+.hide, #hide{
+    display:none;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:80vh;
+    width:10rem;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display:none;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+.sidebar li{
+    font-size: 1.5rem;
+    padding-top:1.5rem;
+    padding-left:2rem;
+  } 
+  
+.sidebar a{
+    text-decoration: none;
+    color:#888888;
+  }
+
+.sidebar a:hover{
+    color:deepskyblue;
+}
+
+.content1{
+    position: relative;
+    height:25rem;
+}
+
+.content1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:22rem;
+    z-index:-1;
+    opacity:.5;
+}
+
+.content1 h1{
+    padding:3rem 2rem;
+    font-size: 2.5rem;
+}
+
+.content1 button{
+    background: black;
+    color: #fff;
+    margin-left: 2rem;
+    padding:.5rem;
+    cursor:pointer;
+}
+
+.nav a.active{
+    color:deepskyblue;
+}
+
+.service{
+    margin:2rem 1rem; 
+}
+
+.row-1 h3{
+    font-size:1.5rem;
+    font-weight: 300;
+}
+
+.row-1 .icon-1 i{
+    font-size:2rem;
+    color:deepskyblue;
+}
+
+.row-2{
+    margin-top:2rem;
+}
+
+.row-2 h3{
+    font-size:1.5rem;
+    font-weight: 300;
+}
+
+.row-2 .icon-2 i{
+    font-size:2rem;
+    color:deepskyblue;
+}
+
+.row-3{
+    margin-top:2rem;
+}
+
+.row-3 h3{
+    font-size:1.5rem;
+    font-weight: 300;
+}
+
+.row-3 .icon-3 i{
+    font-size:2rem;
+    color:deepskyblue;
+}
+
+.row-4{
+    margin-top:2rem;
+}
+
+.row-4 h3{
+    font-size:1.5rem;
+    font-weight: 300;
+}
+
+.row-4 .icon-4 i{
+    font-size:2rem;
+    color:deepskyblue;
+}
+
+.product{
+    margin:2rem 1rem; 
+}
+
+.product p{
+    color:deepskyblue;
+}
+
+.product .blog-1{
+    margin-top:2rem;
+    display:flex;
+}
+
+.product h1{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.product .img-1 img{
+    width:100%;
+    width:10rem;
+    height:13.3rem;
+}
+
+.product .img-2 img{
+    width:100%;
+    width:10rem;
+}
+
+.product .img-2{
+    position:absolute;
+    right:1rem;
+}
+
+.product .blog-2{
+    margin-top:2rem;
+    display:flex;
+}
+
+.product .img-3 img{
+    width:100%;
+    width:10rem;
+    height:13.3rem;
+   
+}
+
+.product .img-4 img{
+    width:100%;
+    width:10rem;
+    height:13.3rem;
+}
+
+.product .img-4{
+    position:absolute;
+    right:1rem;
+}
+
+.watches{
+    margin:2rem 1rem; 
+}
+
+.watches p{
+    color:deepskyblue
+}
+
+.watches .block-1{
+    margin-top:2rem;
+    display:flex;
+}
+
+.watches h1{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.watches .img-1 img{
+    width:100%;
+    width:10rem;
+    height:13.3rem;
+    object-fit:cover;
+   
+}
+
+.watches .img-2 img{
+    width:100%;
+    width:10rem;
+    object-fit:cover;
+    height:13.3rem;
+}
+
+.watches .img-2{
+    position:absolute;
+    right:1rem;
+}
+
+.watches .block-2{
+    margin-top:2rem;
+    display:flex;
+}
+
+.watches .img-3 img{
+    width:100%;
+    width:10rem;
+    height:13.3rem;
+    object-fit:cover;
+   
+}
+
+.watches .img-4 img{
+    width:100%;
+   width:10rem;
+    height:13.3rem;
+    object-fit:cover;
+}
+
+.watches .img-4{
+    position:absolute;
+    right:1rem;
+}
+
+.sale{
+    position: relative;
+    height:25rem;
+    margin-top:8rem;
+}
+
+.sale::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("sale.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:22rem;
+    z-index:-1;
+    opacity:.5;
+}
+
+.sale .content{
+    font-size:1.5rem;
+    padding-top:4rem;
+    padding-left:3rem;
+}
+
+.sale .content button{
+    background: black;
+    color: #fff;
+    padding:.5rem;
+    margin-top: 1.5rem;
+    width:8rem;
+}
+
+.blog{
+    margin-top:8rem;
+    padding:1rem;
+}
+
+.blog h1{
+    text-align: center;
+}
+
+.blog .blog-1{
+    text-align: center;
+    margin-top:2rem;
+}
+
+.blog .blog-1 img{
+    width:100%;
+    width:20rem;
+    border-radius: .5rem;
+}
+
+.blog .blog-1 h3{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.blog .blog-1 p{
+    margin-top:1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.blog .blog-2{
+    text-align: center;
+    margin-top:5rem;
+}
+
+.blog .blog-2 img{
+    width:100%;
+    width:20rem;
+    border-radius: .5rem;
+}
+
+.blog .blog-2 h3{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.blog .blog-2 p{
+    margin-top:1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.blog .blog-3{
+    text-align: center;
+    margin-top:5rem;
+}
+
+.blog .blog-3 img{
+    width:100%;
+    width:20rem;
+    border-radius: .5rem;
+}
+
+.blog .blog-3 h3{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.blog .blog-3 p{
+    margin-top:1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.quote{
+    margin-top:8rem;
+    padding:1rem;
+
+}
+
+.quote .quote-icon{
+    text-align: center;
+}
+
+.quote .quote1{
+    text-align: center;
+}
+
+.quote .quote-icon i{
+    font-size: 6rem;
+    color:deepskyblue;
+    opacity: .2;
+}
+
+.quote .quote1 p{
+    margin-top:1rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.quote .quote1 h4{
+    font-size:1.2rem;
+    margin-top:1rem;
+}
+
+.quote .quote2{
+    text-align: center;
+    display:none;
+}
+
+.quote .quote2 p{
+    margin-top:1rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.quote .quote2 h4{
+    font-size:1.2rem;
+    margin-top:1rem;
+}
+
+.dots{
+    justify-content: center;
+    display:flex;
+    gap:1rem;
+    margin-top:2rem;
+}
+
+.dot1{
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: deepskyblue;
+    border-radius: 50%;
+    cursor:pointer;
+  }
+
+.dot2{
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor:pointer;
+  }
+
+  
+
+.subscribe{
+    background-color: #393d3d;
+    color:#fff;
+    margin-top:2rem;
+}
+
+.subscribe .heading, .subscribe .container{
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+
+.subscribe .heading{
+    padding-top:3rem;
+}
+
+.subscribe .heading h2{
+    font-size:2rem;
+}
+
+.subscribe .heading p{
+    font-size:1.2rem;
+    margin-top: 1rem;
+}
+
+.subscribe .container{
+    margin-top:3rem;
+    padding-bottom: 3rem;
+}
+
+.subscribe .container input{
+    width:100%;
+    font-size: 1.2rem;
+    padding-top:.7rem;
+    padding-bottom:.7rem;
+}
+
+.subscribe .container .block-2{
+    text-align: center;
+}
+
+.subscribe .container button{
+    width:100%;
+    font-size: 1.2rem;
+    padding-top:.7rem;
+    padding-bottom:.7rem;
+    width:10rem;
+    margin-top:.5rem;
+    color:#fff;
+    background-color: deepskyblue;
+    cursor:pointer;
+}
+
+.last{
+    margin-top:8rem;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+
+.last .address h1{
+    font-weight: 400;
+    font-size:2.5rem;
+}
+
+.last .address p{
+    font-size: 1.2rem;
+    margin-top:1rem;
+    color: #bbb;
+}
+
+.last .address ul{
+    margin-top:1rem;
+    display:flex;
+    gap:2rem;
+}
+
+.last .address ul i{
+    color:#bbb;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.last .address ul i:hover{
+    color:deepskyblue;
+}
+
+.help{
+    margin-top:4rem;
+}
+
+.last .help h1{
+    font-weight: 400;
+    font-size:2rem;
+}
+
+.last .help ul{
+    margin-top:1rem;
+}
+
+.last .help ul li a{
+    color:#bbb;
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+.last .help ul li a:hover{
+    color:deepskyblue;
+}
+
+.last .contact{
+    margin-top:4rem;
+}
+
+.last .contact p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.last .contact h1{
+    font-weight: 400;
+    font-size:2rem;
+}
+
+.last .contact .para1, .last .contact .para3{
+    color:#bbb;
+    margin-top:2rem;
+}
+
+footer{
+    background-color: deepskyblue;
+    text-align: center;
+    height:2.5rem;
+    margin-top:2rem;
+}
+
+footer p{
+    font-size:1rem;
+    line-height: 2.2rem;
+    color:#fff;
+}
+
+@media only screen and (min-width:700px){
+    .content1::before{
+        height:25rem;
+    }
+
+    .content1 h1{
+        padding-top:7rem;
+    }
+    
+    .content1 button{
+        margin-left: 2rem;
+        padding:.5rem;
+    }
+
+    .service{
+        margin-top:10rem; 
+        margin-left:6rem;
+    }
+
+    .service .row-1{
+        display:flex;
+        gap:2rem;
+    }
+
+    .service p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .service .row-2{
+        display:flex;
+        gap:2rem;
+    }
+
+    .service .row-3{
+        display:flex;
+        gap:2rem;
+    }
+
+    .service .row-4{
+        display:flex;
+        gap:2rem;
+    }
+
+    .product{
+        margin-top: 10rem;
+        padding-left: 4rem;
+        padding-right:4rem;
+    }
+
+    .product h1{
+        text-align: left;
+    }
+
+    .product .img-2{
+        position:absolute;
+        right:5rem;
+    }
+
+    .product .img-1 img{
+        width:100%;
+        width:12rem;
+        height:15rem;
+    }
+
+    .product .img-2 img{
+        width:100%;
+        width:12rem;
+        height:15rem;
+    }
+
+    .product .img-4{
+        position:absolute;
+        right:5rem;
+    }
+
+    .product .img-4 img{
+        width:12rem;
+        height:15rem;
+    }
+
+    .product .img-3 img{
+        width:100%;
+        width:12rem;
+        height:15rem;
+    }
+
+    .watches{
+        margin-top: 10rem;
+        padding-left: 4rem;
+        padding-right:4rem;
+    }
+
+    .watches h1{
+        text-align: left;
+    }
+
+    .watches .img-2{
+        position:absolute;
+        right:5rem;
+    }
+
+    .watches .img-1 img{
+        width:100%;
+        width:12rem;
+        height:15rem;
+    }
+
+    .watches .img-2 img{
+        width:100%;
+        width:12rem;
+        height:15rem;
+    }
+
+    .watches .img-4{
+        position:absolute;
+        right:5rem;
+    }
+
+    .watches .img-4 img{
+        width:12rem;
+        height:15rem;
+    }
+
+    .watches .img-3 img{
+        width:100%;
+        width:12rem;
+        height:15rem;
+    }
+
+    .sale{
+        margin-top:10rem;
+    }
+
+    .subscribe .container{
+        display:inline-flex;
+    }
+
+    .subscribe .container button{
+        margin-top:0;
+        width:12rem;
+    }
+
+    .last{
+        text-align: center;
+    }
+
+    .last .address ul{
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width:990px){
+    .nav{
+        padding-left:4rem;
+    }
+
+    .nav .hide, .nav #hide{
+        display:block;
+    }
+
+    .nav-bar ul{
+        display:inline-flex;
+        gap:3rem;
+    }
+
+    .nav-bar ul li, .nav-bar ul i{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color:#888888;
+        cursor: pointer;
+    }
+
+    .nav-bar ul li a{
+        text-decoration: none;
+        color:#888888;
+        cursor: pointer;
+    }
+
+    .nav-bar ul li a:hover, .nav-bar ul i:hover{
+        color:deepskyblue;
+    }
+
+    .nav-bar .menu-bar{
+        display:none;
+    }
+
+    .content1::before{
+        height:40rem;
+    }
+
+    .content1 h1{
+        padding-top:15rem;
+        padding-left:5rem;
+    }
+    
+    .content1 button{
+        margin-left: 5rem;
+        padding:.5rem;
+    }
+
+    .service{
+        margin-top:25rem; 
+        display:flex;
+        margin-left:5rem;
+        gap:1.5rem;
+        margin-right: 5rem;
+    }
+
+    .service .row-1{
+        display:flex;
+        gap:1rem;
+        padding-right:3rem;
+        padding-left:3rem;
+    }
+
+    .row-1 h3{
+        font-size:1.5rem;
+    }
+    
+    .row-1 .icon-1 i{
+        font-size:1.8rem;
+    }
+
+    .service p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin-top:1rem;
+    }
+
+    .service .row-2{
+        margin:0;
+        gap:1rem;
+        padding-right:3rem;
+        padding-left:3rem;
+    }
+
+    .row-2 h3{
+        font-size:1.5rem;
+    }
+    
+    .row-2 .icon-2 i{
+        font-size:1.8rem;
+    }
+
+    .service .row-3{
+        margin:0;
+        gap:1rem;
+        padding-right:3rem;
+        padding-left:3rem;
+    }
+
+    .row-3 h3{
+        font-size:1.5rem;
+    }
+    
+    .row-3 .icon-3 i{
+        font-size:1.8rem;
+    }
+
+    .service .row-4{
+        margin:0;
+        gap:1rem;
+        padding-right:3rem;
+        padding-left:3rem;
+    }
+
+    .row-4 h3{
+        font-size:1.5rem;
+    }
+    
+    .row-4 .icon-4 i{
+        font-size:1.8rem;
+    }
+
+    .product{
+        margin-top:12rem;
+    }
+
+    .product .block{
+        display:flex;
+        gap:1rem;
+    }
+    
+    .product h1{
+        text-align: left;
+        margin-top: 8rem;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .product .img-1 img{
+        width:100%;
+        width:17rem;
+        height:20rem;
+    }
+    
+    .product .img-2 img{
+        width:100%;
+        width:17rem;
+        height:20rem;
+    }
+    
+    .product .img-2{
+        position:relative;
+        margin-left:10rem;
+    }
+    
+    .product .img-3 img{
+        width:100%;
+        width:17rem;
+        height:20rem;
+       
+    }
+    
+    .product .img-4 img{
+        width:100%;
+        width:17rem;
+        height:20rem;
+    }
+    
+    .product .img-4{
+        position:relative;
+        margin-left:10rem;
+    }
+
+    .watches{
+        margin-top:12rem;
+    }
+
+    .watches .block{
+        display:flex;
+        gap:1rem;
+    }
+    
+    .watches h1{
+        text-align: left;
+        margin-top: 8rem;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    
+    .watches .img-1 img{
+        width:100%;
+        width:17rem;
+        height:20rem;
+    }
+    
+    .watches .img-2 img{
+        width:100%;
+        width:17rem;
+        height:20rem;
+    }
+    
+    .watches .img-2{
+        position:relative;
+        margin-left:10rem;
+    }
+    
+    .watches .img-3 img{
+        width:100%;
+        width:17rem;
+        height:20rem;
+    }
+    
+    .watches .img-4 img{
+        width:100%;
+        width:17rem;
+        height:20rem;
+    }
+    
+    .watches .img-4{
+        position:relative;
+        margin-left:10rem;
+    }
+
+    .sale{
+        margin-top:15rem;
+    }
+    
+    .sale::before{
+        height:35rem;
+    }
+
+    .sale .content{
+        font-size:2rem;
+        padding-top:10rem;
+        padding-left:5rem;
+    }
+
+    .blog{
+        margin-top:25rem;
+        padding-left:4rem;
+        padding-right:4rem;
+    }
+
+    .blog .block{
+        display:flex;
+        gap:2rem;
+    }
+
+    .blog h1{
+        text-align: left;
+        padding-left:2.4rem;
+        font-size:3rem;
+        font-weight: 400;
+        margin-bottom:2rem;
+    }
+
+    .blog .blog-2{
+        text-align: center;
+        margin-top:.7rem;
+    }
+
+    .blog .blog-3{
+        margin-top:.2rem;
+    }
+
+    .quote{
+        margin-top:8rem;
+        padding-left:20rem;
+        padding-right:20rem;
+    }
+
+    .subscribe{
+        margin-top:8rem;
+        display:flex;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        height:15rem;
+    }
+
+    .subscribe .heading h2{
+        font-size:3rem;
+        font-weight: 400;
+        line-height: 5rem;
+        padding-left:12rem;
+    }
+
+    .subscribe .heading p{
+        font-size:1rem;
+        margin-top: 1rem;
+        line-height:0;
+        padding-left:12rem;
+    }
+
+    .subscribe .container{
+        margin-top:3rem;
+        padding-bottom: 3rem;
+        line-height: 8rem;
+    }
+
+    .last{
+        margin-top:12rem;
+        display:flex;
+        gap:3rem;
+    }
+
+    .last .address{
+        padding-left: 5rem;
+        padding-right:0rem;
+        width:40%;
+        text-align: left;
+    }
+    
+    .last .address ul {
+        justify-content: left;
+    }
+
+    .help{
+        margin-top:0rem;
+        text-align: left;
+    }
+
+    .last .contact{
+        margin-top:0rem;
+        text-align: left;
+        margin-left:3rem;
+    }
+    
+
+}
